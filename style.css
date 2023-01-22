@@ -14,7 +14,7 @@ body {
 button{
 padding: 16px 24px;
 border-radius: 8px;
-border: 1px solid purple;
+border: 1px solid rgb(75, 206, 39);
 background-color: transparent;
 color: white;
 
@@ -33,12 +33,15 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 48px;
+    position: fixed;
+    width: 100%;
+    background-color: #09090a;
 }
 input{
     height: 64px ;
     width: 64px ;
     border-radius: 8px;
-    border: 2px solid purple;
+    border: 2px solid rgb(28, 180, 79);
     appearance: none;
     background-color: black;
 }
@@ -50,10 +53,10 @@ input:checked{
 }
 
 
-form{
+#form-habits {
     display: flex;
-
-    padding:  0 48px 0;
+    padding: 182px 48px 48px;
+    width: fit-content;
 }
 
 .habit{
@@ -93,4 +96,10 @@ form{
 }
 .day div{
     margin-bottom: 8px;
+}
+
+@media(max-width: 570px){
+    button div {
+        display: none; 
+    }
 }

@@ -3,6 +3,20 @@
     "development"
   ],
   "hints": {
-    "axe/forms": "off"
-  }
+    "axe/forms": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "width: fit-content"
+        ]
+      }
+    ]
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_ff <= 105",
+    "not firefox <= 105"
+  ]
 }
